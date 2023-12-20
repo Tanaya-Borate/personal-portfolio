@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2757ed71ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><a href="#"><br>Tanaya Borate</a></div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hello , I'm<span> Tanaya</span><br> Borate from  Satara</h1>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-----------about section start from here--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!------------iamge --------->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1> 
+                    <p>A brief introduction highlighting your passion for web development.
+                        Your journey into the field—what sparked your interest, any significant experiences, or projects that inspired you.
+                        Skills and Technologies:
+                        
+                        List the programming languages, frameworks, and tools you're proficient in (e.g., HTML, CSS, JavaScript, React, Node.js, etc.).
+                        Mention any specific areas of expertise (e.g., front-end development, back-end development, full-stack development, etc.).
+                        Indicate your familiarity with version control systems (e.g., Git) and any other relevant software or methodologies.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Web Developer</span><br>Designing Web/App interfaces</li>
+                                <li><span>App Development</span><br>Building Android OS apps</li>
+                                <li><span>Graphics</span><br>Designing Banner</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Web Developer</span><br>web development</li>
+                                <li><span>App Development</span><br>web development</li>
+                                <li><span>Graphics</span><br>web development</li>
+                            </ul>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------service section starts from here---------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating visual element and layout of a website while coding involves translating 
+                        these designs into a functional websites using  programming languages like HTML , CSS , JavaScript.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Ux/UI Design</h2>
+                    <p>UX/UI design refers to the interact with website through using buttons , toggles
+                         , icons ,and other. It focuses on creating a user interface and experience for a digital produact</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h2>Graphics</h2>
+                    <p>It is a art and practice of planning and projecting ideas and experience with visual
+                         and textual content.we create the graphic design visuals to communicate certain  message </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!------------portfolio section starts from here------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1> 
+            <div class="work-list">
+                <div class="work">
+                   
+                    <div class="layer">
+                        <h3>Social E-coomerce Website</h3>
+                        <p>the website helps you to purchase the quality product wia the internet without consuming time</p>
+                        <a href="#" class="btn">See</i></a>
+                    </div>
+                </div>
+                <div class="work">
+                   
+                    <div class="layer">
+                        <h3>Spell checker<br> App</h3>
+                        <p>the apps helps you to correct your grammatical mistakes in sentences</p>
+                        <a href="#" class="btn">See</i></a>
+                    </div>
+                </div>
+                <div class="work">
+                   
+                    <div class="layer">
+                        <h3>Aarogya Ayurveda<br>medicinal app </h3>
+                        <p>the website helps other people to gather information about single individual</p>
+                        <a href="#" class="btn">See</i></a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+<!-----------contact section starts from here----------->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tanayaborate@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9876543210</p>
+                <a href="D:\resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="E-mail" placeholder="your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-links");
+
+        function opentab(tabname){
+            for(tablink of tablink){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontents.classList.remove("active-tab")
+            }
+        }
+
+
+    </script>
+    <script>
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e =>{
+            e.preventDefault()
+            fetch(scriptURL,{method: 'POST',body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully"
+            })
+            .catch(error => console.error('Error!',error.message))
+        })
+    </script>
+</body>
+</html>
